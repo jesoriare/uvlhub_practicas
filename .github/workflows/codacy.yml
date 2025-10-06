@@ -21,7 +21,7 @@ jobs:
     ## 1 Añadir un pasoq que verifique si hay nuevas versiones de las dependencias instaladas
     - name: Check for outdated dependencies
       run: |
-        pip install --outdated
+        pip list --outdated
 
     - name: Set up Python
       uses: actions/setup-python@v5
